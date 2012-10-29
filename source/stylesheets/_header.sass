@@ -1,13 +1,14 @@
-nav.nav-user
+$noticias-color: #db8112
+$esportes-color: #339fa0
+$entretenimento-color: #ad4890
+nav#nav-main
   +padding-leader(0)
   +padding-trailer(0)
   // +span-columns(6 omega,12)
-  
-  .info
-    color: #fff
     
   ul
-    +adjust-font-size-to(13px)
+    +font-size(30px)
+    font-weight: bold
     line-height: 40px
     overflow: visible
     +float-right
@@ -17,45 +18,26 @@ nav.nav-user
       display: inline
       margin-left: 0
       line-height: 40px
-  
-      &:after
-        content: "•"
-        position: relative
-        color: #fff
-        padding-left: 6px
-  
-      &:last-child:after, &:first-child:after
-        content: ""
-        padding: 0
+
+      &.noticias
+        a
+          color: $noticias-color
+      &.esportes
+        a
+          color: $esportes-color
+      &.entretenimento
+        a
+          color: $entretenimento-color
   
       a
         padding-left: .5em
         padding-right: .5em
         +inline-block
-        color: #fff
+        color: #333
         font-weight: bold
         text-decoration: none
   
         &:active
   
         &:hover
-          text-decoration: underline
-  
-      &.item-avatar
-        vertical-align: middle
-  
-        .user-avatar
-          +inline-block
-          +pie-clearfix
-  
-          img
-            width: 24px
-            height: 24px
-            float: left
-            text-align: center
-  
-      &.item-username
-        padding-right: 3px
-        color: #fff
-  
-      &.item-logout
+          text-decoration: none
