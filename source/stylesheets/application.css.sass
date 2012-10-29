@@ -9,21 +9,20 @@
 @import "compass"
 @import "foundation"
 @import "header"
-@import "news-feed"
+@import "footer"
 
 body
-  background-color: #ecf0f1
+  background-color: #fff
   font-family: helvetica, verdana, arial, sans-serif
   // font-size: 13px
 
 header#header
-  background-color: #339fa0
-  height: 40px
-  color: #fff
-  border-bottom: 1px solid darken(#339fa0, 5%)
+  border-bottom: 1px solid #ddd
+  background-color: #fff
+  +box-shadow(0 1px 5px rgba(0,0,0,.08))
 
   body.index &
-    height: 90px
+    height: 120px
 
 
 
@@ -39,8 +38,8 @@ header#header
       width: 92px
       height: 19px
       display: block
-      background: transparent image-url("logo-fakebook.png") 0 0 no-repeat
-      +image-2x("logo-fakebook@2x.png", 92px, 19px)
+      background: transparent image-url("logo.png") 0 0 no-repeat
+      +image-2x("logo@2x.png", 92px, 19px)
       +hide-text
       position: absolute
       top: 11px
@@ -51,14 +50,14 @@ header#header
         display: block
       
       body.index &
-        width: 138px
-        height: 28px
-        top: 30px
-        +image-2x("logo-fakebook@2x.png", 138px, 28px)
+        width: 191px
+        height: 79px
+        top: 20px
+        +image-2x("logo@2x.png", 191px, 79px)
 
         a
-          width: 138px
-          height: 28px
+          width: 191px
+          height: 79px
 
 
 
