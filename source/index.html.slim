@@ -1,0 +1,68 @@
+---
+title: Bem-vindo ao Fakebook!
+---
+
+section#banner
+  == image_tag("home-video.jpg")
+
+section#create-account
+  h1 Criar Conta
+  
+  
+  form action="" method="get"
+
+    .form-row
+      .form-label
+        label.right.inline for="field-primeiro-nome" Avatar:
+      .form-field
+        .file.upload
+          .fileupload.thumbnail style="width: 40px; height: 40px; float: left; border: 1px solid #ccc;"
+            == image_tag("user-avatar.png", width: 40, height: 40)
+          input type="file" style="float: left; margin: 10px 0 23px 5px;"
+
+    .form-row
+      .form-label
+        label.right.inline for="field-primeiro-nome" Primeiro Nome:
+      .form-field
+        input type="text" id="field-primeiro-nome" tabindex="6"
+    
+    .form-row
+      .form-label
+        label.right.inline for="field-ultimo-nome" Último Nome:
+      .form-field
+        input type="text" id="field-ultimo-nome" tabindex="7"
+
+    .form-row
+      .form-label
+        label.right.inline for="field-email-signup" Email:
+      .form-field
+        input type="text" id="field-email-signup" tabindex="8"
+        
+    .form-row
+      .form-label
+        label.right.inline for="field-password-signup" Senha:
+      .form-field
+        input type="password" id="field-password-signup" tabindex="9"
+  
+    .form-row
+      .form-label
+        label.right.inline for="field-password-signup" Sexo:
+      .form-field
+        select tabindex="10"
+          option Selecionar
+          
+    .form-row
+      .form-label
+        label.right.inline for="field-password-signup" Data de Nascimento:
+      .form-field
+        select.four.columns tabindex="11"
+          option Dia
+        select.four.columns tabindex="12"
+          option Mês
+        select.four.columns tabindex="13"
+          option Ano
+    
+    .form-row
+      .form-label
+      .form-field
+        button.small.button type="Submit" tabindex="14" Criar Conta

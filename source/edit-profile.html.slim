@@ -1,0 +1,73 @@
+---
+title: Fakebook - Profile
+---
+
+
+== partial "_partials/sidebar"
+
+section#edit-profile
+
+  .box
+
+    header.box-header
+      h1 Editar Perfil
+
+    .box-content
+
+      form action="" method="get"
+      
+        .form-row
+          .form-label
+            label.right.inline for="field-primeiro-nome" Avatar:
+          .form-field
+            .file.upload
+              .fileupload.thumbnail style="width: 40px; height: 40px; float: left; border: 1px solid #ccc;"
+                == image_tag("user-chuck.jpg", width: 40, height: 40)
+              input type="file" style="float: left; margin: 10px 0 23px 5px;" tabindex="1"
+        
+        .form-row
+          .form-label
+            label.right.inline for="field-primeiro-nome" Primeiro Nome:
+          .form-field
+            input type="text" id="field-primeiro-nome" tabindex="2"
+        
+        .form-row
+          .form-label
+            label.right.inline for="field-ultimo-nome" Último Nome:
+          .form-field
+            input type="text" id="field-ultimo-nome" tabindex="3"
+        
+        .form-row
+          .form-label
+            label.right.inline for="field-email-signup" Email:
+          .form-field
+            input type="text" id="field-email-signup" tabindex="4"
+            
+        .form-row
+          .form-label
+            label.right.inline for="field-password-signup" Senha:
+          .form-field
+            input type="password" id="field-password-signup" tabindex="5"
+        
+        .form-row
+          .form-label
+            label.right.inline for="field-password-signup" Sexo:
+          .form-field
+            select tabindex="6"
+              option Selecionar
+              
+        .form-row
+          .form-label
+            label.right.inline for="field-password-signup" Data de Nascimento:
+          .form-field
+            select.four.columns tabindex="7"
+              option Dia
+            select.four.columns tabindex="8"
+              option Mês
+            select.four.columns tabindex="9"
+              option Ano
+        
+        .form-row.form-action
+          .form-label
+          .form-field
+            button.small.button type="Submit" tabindex="10" Salvar Alterações

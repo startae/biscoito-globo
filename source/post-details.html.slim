@@ -1,0 +1,38 @@
+---
+title: Fakebook - Detalhes Post
+---
+      
+== partial "_partials/sidebar"
+
+section#post-details
+
+  .box
+
+    header.box-header
+      h1 Detalhes Post
+    
+    .box-content
+
+      .list-view.ui-comments-list
+        ul
+          li
+            .item-image.usuario
+              span.item-image-wrap
+                == image_tag("user-chuck.jpg", width: 40, height: 40)
+            .item-info
+              .item-activity
+                .user-name
+                  a href="/profile" Chuck Norris
+                .user-comment
+                  p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes
+                    a href="#" 2
+                  span.count-comments
+                    a href="#" 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro

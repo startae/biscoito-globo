@@ -1,0 +1,61 @@
+nav.nav-user
+  +padding-leader(0)
+  +padding-trailer(0)
+  // +span-columns(6 omega,12)
+  
+  .info
+    color: #fff
+    
+  ul
+    +adjust-font-size-to(13px)
+    line-height: 40px
+    overflow: visible
+    +float-right
+    
+    li
+      float: left
+      display: inline
+      margin-left: 0
+      line-height: 40px
+  
+      &:after
+        content: "•"
+        position: relative
+        color: #fff
+        padding-left: 6px
+  
+      &:last-child:after, &:first-child:after
+        content: ""
+        padding: 0
+  
+      a
+        padding-left: .5em
+        padding-right: .5em
+        +inline-block
+        color: #fff
+        font-weight: bold
+        text-decoration: none
+  
+        &:active
+  
+        &:hover
+          text-decoration: underline
+  
+      &.item-avatar
+        vertical-align: middle
+  
+        .user-avatar
+          +inline-block
+          +pie-clearfix
+  
+          img
+            width: 24px
+            height: 24px
+            float: left
+            text-align: center
+  
+      &.item-username
+        padding-right: 3px
+        color: #fff
+  
+      &.item-logout
