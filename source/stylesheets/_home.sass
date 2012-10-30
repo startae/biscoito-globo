@@ -1,0 +1,46 @@
+.destaques-categoria
+  +column(4)
+  
+  header
+    h1
+      +font-size(32)
+
+  a
+    text-decoration: none
+
+  .conteudo
+    display: block
+    
+    p
+      +font-size(18)
+      margin: 0
+      padding: 0
+      line-height: 1em
+      font-weight: bold
+
+  .destaque
+    border-bottom: 1px dotted #cecece
+    +pie-clearfix
+
+    &:last-of-type
+      border-bottom: none
+  
+  // Destaque Secundário
+  .destaque-secundario
+    padding-bottom: 10px
+    .conteudo
+      padding: 10px 0
+
+  // Destaque Terciario
+  .destaque-terciario
+    padding: 20px 0
+
+    .foto
+      height: 65px
+      +float-left
+      margin-right: 10px
+  
+    .conteudo
+      p
+        +font-size(16)
+        padding: 0 10px 0 0
