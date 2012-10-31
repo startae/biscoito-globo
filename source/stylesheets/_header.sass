@@ -7,8 +7,11 @@ nav#nav-main
     font-weight: bold
     line-height: 20px
     overflow: visible
-    padding-top: 70px
+    padding-top: 20px
     +float-right
+    
+    body.pagina-home &
+      padding-top: 70px
     
     li
       float: left
@@ -17,13 +20,35 @@ nav#nav-main
       line-height: 20px
       +font-size(20px)
       text-transform: lowercase
+      padding-left: 1em
+      padding-right: 1em
+      
+      &.nav-noticias
+        a
+          color: $noticias-color
+  
+          body.area-noticias &
+            border-bottom: 4px solid $noticias-color
+
+      &.nav-esportes
+        a
+          color: $esportes-color
+          
+          body.area-esportes &
+            border-bottom: 4px solid $esportes-color
+
+      &.nav-entretenimento
+        a
+          color: $entretenimento-color
+
+          body.area-entretenimento &
+            border-bottom: 4px solid $entretenimento-color
   
       a
-        padding-left: 1em
-        padding-right: 1em
         +inline-block
         font-weight: bold
         text-decoration: none
+        border-bottom: 4px solid transparent
   
         &:active
   

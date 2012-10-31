@@ -22,7 +22,7 @@ header#header
   background-color: #fff
   +box-shadow(0 1px 5px rgba(0,0,0,.08))
 
-  body.index &
+  body.pagina-home &
     height: 120px
 
 
@@ -32,7 +32,7 @@ header#header
     height: 60px
     overflow: hidden
 
-    body.index &
+    body.pagina-home &
       height: 90px
 
     #logo
@@ -50,7 +50,7 @@ header#header
         height: 24px
         display: block
       
-      body.index &
+      body.pagina-home &
         width: 191px
         height: 79px
         top: 20px
@@ -104,7 +104,7 @@ header#header
     +outerRow
     padding-bottom: 40px
   
-    body.index &
+    body.pagina-home &
       padding-top: 40px
 
 
@@ -128,94 +128,3 @@ a
       margin: 0
 
   .box-content
-
-
-
-#create-account
-  +column(6)
-  
-  h1
-    font-size: ms(2)
-    margin: 0
-    color: #405a68
-    border-bottom: 1px solid #ccd3db
-    padding-bottom: 10px
-  
-  form
-    padding-top: 15px
-
-    .form-row
-      +innerRow(collapse)
-      +pie-clearfix
-    
-    .form-label
-      +column(4)
-    
-    .form-field
-      +column(8)
-      
-      select
-        margin-top: 7px
-
-#banner
-  +column(6)
-
-
-#profile
-  +column(11)
-  
-  #user-activity
-    +column(9)
-    +push(3)
-    padding-right: 0
-  
-    .list-view
-      border-left: 1px solid #dce0e8
-  
-  #cover-page
-    
-    #cover-page-image
-      overflow: hidden
-      height: 175px
-    
-    #cover-page-user
-      position: relative
-      background-color: #fff
-      +box-shadow(0 1px 4px rgba(#000, .2))
-      height: 55px
-      
-      .item-image
-        position: absolute
-        top: -75px
-        left: 20px
-        
-        img
-          background-color: #fff
-          padding: 4px
-          border: 1px solid #ddd
-     
-    .user-name
-      font-weight: bold
-      +font-size(22)
-      line-height: 45px
-      margin-left: 154px
-
-
-#forgot-password
-  +column(8)
-  +push(2)
-
-  .panel
-    padding: 0
-    +border-radius(3px)
-
-  h1
-    font-size: ms(3)
-    background-color: #fbfcfc
-    border-bottom: 1px solid #e4e4e4
-    color: #405a68
-    padding: 15px
-    +border-top-radius(3px)
-
-  form
-    padding: 15px
