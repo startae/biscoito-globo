@@ -4,17 +4,17 @@ header#header role="banner"
   #header-inner
   
     #logo
-      a href="/" title="Fakebook" Biscoito Globo.com
+      == link_to "BiscoitoGlobo.com", "/", title: "BiscoitoGlobo.com"
   
     nav#nav-main
       ul
         li.area-noticias
-          a href="noticias" Notícias
+          == link_to "Notícias", "/noticias", title: "Notícias"
 
         li.area-esportes
-          a href="esportes" Esportes
+          == link_to "Esportes", "/esportes", title: "Esportes"
 
         li.area-entretenimento
-          a href="entretenimento" Entretenimento
+          == link_to "Entretenimento", "/entretenimento", title: "Entretenimento"
   /! end #header-inner
 /! end #header

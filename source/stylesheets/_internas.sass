@@ -96,6 +96,7 @@
 
 section.artigo
   article
+    padding-bottom: 40px
 
     header
       h1
@@ -137,10 +138,14 @@ section.artigo
       font-weight: bold
       text-transform: uppercase
       margin: 0
-      padding: 0
+      padding: 0 0 20px 0
   
   section.ultimas-noticias
     .destaque-terciario
+      &:first-of-type
+        .conteudo p
+          margin-top: 0
+
       .conteudo
         p
           +font-size(18)
@@ -152,3 +157,43 @@ section.artigo
   section.share-noticia
     background-color: #f9f9f9
     padding: 20px
+
+
+
+section#artigo-comentarios
+  header
+    h1
+      color: #000
+      +font-size(24)
+      text-transform: none
+      margin: 0
+      padding: 15px 0
+      border-top: 1px dotted #cecece
+      border-bottom: 1px dotted #cecece
+
+  .comentario
+    border-bottom: 1px dotted #cecece
+    padding: 15px 0
+
+    .autor
+      font-weight: bold
+      display: inline
+      padding-right: 5px
+      line-height: 1.1em
+
+    .conteudo
+      p
+        display: inline
+        color: #777
+        line-height: 1.1em
+
+    .entry-meta
+      display: block
+      padding-top: 4px
+      .entry-date
+        +font-size(12)
+        color: #999
+
+  .form-comentario
+    background-color: #f9f9f9
+    padding: 30px 100px

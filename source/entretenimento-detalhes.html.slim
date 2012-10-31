@@ -10,6 +10,7 @@ header.titulo-area
 #content-inner
 
   #main
+
     section.artigo
       article
         header
@@ -22,9 +23,8 @@ header.titulo-area
           p Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da jamaikis, só num pode ser mijis. Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
           p Cevadis im ampola pa arma uma pindureta. Nam varius eleifend orci, sed viverra nisl condimentum ut. Donec eget justis enim. Atirei o pau no gatis. Viva Forevis aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Copo furadis é disculpa de babadis, arcu quam euismod magna, bibendum egestas augue arcu ut est. Delegadis gente finis. In sit amet mattis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis. Pellentesque viverra accumsan ipsum elementum gravidis.
 
-
-    
-    /! end #destaques-noticias
+    == partial "_partials/comentarios"
+    /! end .artigo
 
 
   #sidebar
@@ -34,13 +34,13 @@ header.titulo-area
         h1 Últimas Notícias
       
       .destaque.destaque-terciario
-        a href="#"
+        == link_to "/entretenimento-detalhes" do
           span.conteudo
             p Caso do ‘morto-vivo’ que parou o próprio velório na BA repercute fora do país
       /! end .destaque-terciario
       
       .destaque.destaque-terciario
-        a href="#"
+        == link_to "/entretenimento-detalhes" do
           span.conteudo
             p Caso do ‘morto-vivo’ que parou o próprio velório na BA repercute fora do país
       /! end .destaque-terciario

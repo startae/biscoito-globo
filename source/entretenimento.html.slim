@@ -4,7 +4,8 @@ body_class: "area-entretenimento pagina-home-area"
 ---
 
 header.titulo-area
-  h1 Entretenimento
+  h1
+    == link_to "Entretenimento", "/entretenimento"
 
 #content-inner
 
@@ -12,7 +13,7 @@ header.titulo-area
     section.listagem-artigos
     
       .destaque.destaque-secundario
-        a href="#"
+        == link_to "/entretenimento-detalhes" do
           span.foto
             == image_tag("destaque-entretenimento.jpg", width: 300, height: 170)
           span.conteudo
@@ -21,7 +22,7 @@ header.titulo-area
       /! end .destaque-terciario
     
       .destaque.destaque-terciario
-        a href="#"
+        == link_to "/entretenimento-detalhes" do
           span.foto
             == image_tag("secundaria-entretenimento-01.jpg", width: 100, height: 65)
           span.conteudo
@@ -30,7 +31,7 @@ header.titulo-area
       /! end .destaque-terciario
     
       .destaque.destaque-terciario
-        a href="#"
+        == link_to "/entretenimento-detalhes" do
           span.foto
             == image_tag("secundaria-entretenimento-02.jpg", width: 100, height: 65)
           span.conteudo
@@ -76,5 +77,6 @@ header.titulo-area
           .form-label
           .form-field
             button.small.button type="Submit" Enviar
-  
+    /! end .share-noticia
+  /! end #sidebar
 /! end #content-inner
