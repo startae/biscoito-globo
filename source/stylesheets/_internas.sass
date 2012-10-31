@@ -2,6 +2,9 @@
   margin-bottom: 40px
   +box-shadow(0 1px 5px rgba(0,0,0,.08))
 
+  a
+    color: #fff
+
   h1
     color: #fff
     padding: 15px 0
@@ -11,15 +14,22 @@
 
   body.area-noticias &
     background-color: $noticias-color
+    
   body.area-esportes &
     background-color: $esportes-color
+    
   body.area-entretenimento &
     background-color: $entretenimento-color
+
+
 
 #content-inner
 
   #main
     +column(8)
+  
+    body.pagina-detalhes &
+      +column(8)
     
     .destaque
       +pie-clearfix
@@ -82,15 +92,63 @@
             padding-top: 8px
             
 
-  #sidebar
-    +column(4)
+
+
+section.artigo
+  article
+
+    header
+      h1
+        text-transform: none
+        line-height: .9em
+
+      h2
+        color: #999
+        +font-size(18)
+        font-weight: normal
+        line-height: 1em
+
+    .entry-content
+      p
+        color: #777
+        +font-size(15)
+        margin: 15px 0 5px 0
+
+
+
+#sidebar
+  +column(4)
+  
+  body.pagina-detalhes &
+    +column(3)
+    +offsetBy(1)
     
-    .share-noticia
-      background-color: #f9f9f9
-      padding: 20px
-      
-      header
-        h1
-          color: #999
-          +font-size(15)
-          text-transform: uppercase
+  .destaque
+    border-bottom: 1px dotted #cecece
+    +pie-clearfix
+  
+  &:last-of-type
+    border-bottom: none
+
+  header
+    h1
+      +font-size(15)
+      color: #999
+      font-weight: bold
+      text-transform: uppercase
+      margin: 0
+      padding: 0
+  
+  section.ultimas-noticias
+    .destaque-terciario
+      .conteudo
+        p
+          +font-size(18)
+          font-weight: bold
+          line-height: 1em
+          padding: 0
+          margin: 20px 0
+  
+  section.share-noticia
+    background-color: #f9f9f9
+    padding: 20px

@@ -57,6 +57,12 @@ Time.zone = "Brasilia"
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+# helpers do
+#   def custom_page_classes
+#     page_classes + " " + yield_content(:pageClasses)
+#   end
+# end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
