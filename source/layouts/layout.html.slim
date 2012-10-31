@@ -12,11 +12,8 @@ html lang="pt-br"
   body class="#{{page_classes}}"
     == partial "_partials/header"
 
-    
     #content
-      #content-inner
-        == yield
-      /! end #content-inner
+      == yield
     /! end #content
     == partial "_partials/footer"
     / == javascript_include_tag  "all"

@@ -1,0 +1,79 @@
+---
+title: "Entretenimento - BiscoitoGlobo.com"
+---
+
+header.titulo-area.area-entretenimento
+  h1 Entretenimento
+
+#content-inner.area-entretenimento
+
+  #main
+    section.listagem-noticias
+    
+      .destaque.destaque-secundario
+        a href="#"
+          span.foto
+            == image_tag("destaque-entretenimento.jpg", width: 300, height: 170)
+          span.conteudo
+            h1 Acidente com ônibus deixa 30 feridos no RJ: ‘Ele veio voado’, diz motorista
+            h2 Lorem lipsum dolor sit amet consectue lorem doren lipsum amet
+      /! end .destaque-terciario
+    
+      .destaque.destaque-terciario
+        a href="#"
+          span.foto
+            == image_tag("secundaria-entretenimento-01.jpg", width: 100, height: 65)
+          span.conteudo
+            h1 Caso do ‘morto-vivo’ que parou o próprio velório na BA repercute fora do país
+            h2 Acidente com ônibus deixa 30 feridos no RJ: ‘Ele veio voado’, diz motorista 
+      /! end .destaque-terciario
+    
+      .destaque.destaque-terciario
+        a href="#"
+          span.foto
+            == image_tag("secundaria-entretenimento-02.jpg", width: 100, height: 65)
+          span.conteudo
+            h1 Caso do ‘morto-vivo’ que parou o próprio velório na BA repercute fora do país
+            h2 Acidente com ônibus deixa 30 feridos no RJ: ‘Ele veio voado’, diz motorista
+      /! end .destaque-terciario
+    /! end #destaques-noticias
+
+
+  #sidebar
+    
+    section.share-noticia
+      header
+        h1 Envie sua notícia
+      
+      form action="" method="get"
+
+        .form-row
+          .form-label
+            label for="field-nome-share" Nome:
+          .form-field
+            input type="text" id="field-nome-share"
+        
+        .form-row
+          .form-label
+            label for="field-email-share" Email:
+          .form-field
+            input type="email" id="field-email-share"
+  
+        .form-row
+          .form-label
+            label for="field-titulo-share" Título da notícia:
+          .form-field
+            input type="text" id="field-titulo-share"
+
+        .form-row
+          .form-label
+            label for="field-comentario-share" Descreva seu comentário:
+          .form-field
+            textarea id="field-comentario-share" rows="6"
+        
+        .form-row
+          .form-label
+          .form-field
+            button.small.button type="Submit" Enviar
+  
+/! end #content-inner

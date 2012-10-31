@@ -1,0 +1,96 @@
+.titulo-area
+  margin-bottom: 40px
+  +box-shadow(0 1px 5px rgba(0,0,0,.08))
+
+  h1
+    color: #fff
+    padding: 15px 0
+    margin: 0
+    +font-size(24)
+    +outerRow
+
+  body.area-noticias &
+    background-color: $noticias-color
+  body.area-esportes
+    background-color: $esportes-color
+  body.area-entretenimento &
+    background-color: $entretenimento-color
+
+#content-inner
+
+  #main
+    +column(8)
+    
+    .destaque
+      +pie-clearfix
+      border-bottom: 1px dotted #cecece
+
+    section.listagem-noticias
+
+      // Destaque Secundario
+      .destaque-secundario
+
+        span.foto
+          +column(6, collapse)
+
+        span.conteudo
+          +column(6, collapse)
+
+          h1
+            +font-size(28)
+            line-height: 1em
+            font-weight: bold
+            text-transform: none
+
+          h2
+            color: #999
+            +font-size(16)
+            line-height: 1em
+            font-weight: normal
+      
+      // Destaque Terciario
+      .destaque-terciario
+        padding: 20px 0
+        
+        a
+          text-decoration: none
+              
+        .foto
+          display: block
+          float: left
+          height: 70px
+          margin-right: 10px
+          width: 100px
+      
+        .conteudo
+
+          h1, h2
+            padding: 0
+            margin: 0
+    
+          h1
+            +font-size(20)
+            line-height: 1em
+            font-weight: bold
+            text-transform: none
+          
+          h2
+            color: #999
+            +font-size(16)
+            line-height: 1em
+            font-weight: normal
+            padding-top: 8px
+            
+
+  #sidebar
+    +column(4)
+    
+    .share-noticia
+      background-color: #f9f9f9
+      padding: 20px
+      
+      header
+        h1
+          color: #999
+          +font-size(15)
+          text-transform: uppercase
